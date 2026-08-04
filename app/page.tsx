@@ -121,6 +121,24 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const headings = Array.from(
+      document.querySelectorAll<HTMLElement>("[data-heading-reveal]"),
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("heading-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "-10% 0px -18%", threshold: 0.18 },
+    );
+    headings.forEach((heading) => observer.observe(heading));
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     if (!preview) return;
     const close = (event: KeyboardEvent) => {
       if (event.key === "Escape") setPreview(null);
@@ -163,7 +181,7 @@ export default function Home() {
         ))}
       </nav>
 
-      <section className="hero" id="top">
+      <section className="hero" id="top" data-heading-reveal>
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
           <p className="kicker">Talli update · Arriving August 04, 2026</p>
@@ -205,6 +223,7 @@ export default function Home() {
             className={`feature feature-${feature.side}`}
             id={feature.id}
             data-feature
+            data-heading-reveal
             key={feature.id}
           >
             <div className="feature-copy">
@@ -256,7 +275,7 @@ export default function Home() {
         })}
       </div>
 
-      <section className="closing" id="closing">
+      <section className="closing" id="closing" data-heading-reveal>
         <p className="kicker">Available August 04, 2026</p>
         <h2>Five updates, arriving tomorrow.</h2>
         <p>
