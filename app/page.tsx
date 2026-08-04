@@ -185,8 +185,10 @@ export default function Home() {
           <span className="orbit orbit-two" />
           <span className="hero-five">5</span>
           <span className="orbit-label label-one">Get paid</span>
-          <span className="orbit-label label-two">Build</span>
-          <span className="orbit-label label-three">Stay informed</span>
+          <span className="orbit-label label-two">Team access</span>
+          <span className="orbit-label label-three">Build estimates</span>
+          <span className="orbit-label label-four">Add details</span>
+          <span className="orbit-label label-five">Stay informed</span>
         </div>
       </section>
 
@@ -196,7 +198,9 @@ export default function Home() {
       </section>
 
       <div className="feature-list">
-        {features.map((feature) => (
+        {features.map((feature, index) => {
+          const nextFeature = features[index + 1];
+          return (
           <section
             className={`feature feature-${feature.side}`}
             id={feature.id}
@@ -217,6 +221,19 @@ export default function Home() {
                 ))}
               </ul>
               {feature.note ? <p className="feature-note">{feature.note}</p> : null}
+              <a
+                className="next-feature"
+                href={`#${nextFeature?.id ?? "closing"}`}
+                aria-label={
+                  nextFeature
+                    ? `Continue to ${nextFeature.eyebrow}`
+                    : "Continue to the closing message"
+                }
+              >
+                <span>{nextFeature ? "Next feature" : "Finish"}</span>
+                <strong>{nextFeature?.eyebrow ?? "What comes next"}</strong>
+                <i aria-hidden="true">↓</i>
+              </a>
             </div>
 
             <button
@@ -235,10 +252,11 @@ export default function Home() {
               <span className="frame-accent" aria-hidden="true" />
             </button>
           </section>
-        ))}
+          );
+        })}
       </div>
 
-      <section className="closing">
+      <section className="closing" id="closing">
         <p className="kicker">Beta is in full swing</p>
         <h2>Keep sending your feedback.</h2>
         <p>
