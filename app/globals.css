@@ -184,13 +184,13 @@ a {
 .heading-visible .hero-copy > .kicker,
 .heading-visible .feature-copy > .kicker,
 .heading-visible.closing > .kicker {
-  animation: heading-kicker-in 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: heading-kicker-in 1300ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .heading-visible .hero-copy > h1,
 .heading-visible .feature-copy > h2,
 .heading-visible.closing > h2 {
-  animation: heading-title-in 780ms 90ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: heading-title-in 1750ms 180ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes heading-kicker-in {
