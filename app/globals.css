@@ -245,7 +245,7 @@ a {
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0;
-  text-indent: 0.035em;
+  transform: translateX(-0.04em);
 }
 
 .orbit-label {
