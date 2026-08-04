@@ -140,7 +140,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Talli update home">
           TALLI
         </a>
-        <span className="header-label">August 2026 preview</span>
+        <span className="header-label">Released August 04, 2026</span>
       </header>
 
       <nav className="progress-nav" aria-label="Feature navigation">
@@ -166,7 +166,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="kicker">Talli update · Beta preview</p>
+          <p className="kicker">Talli update · August 04, 2026</p>
           <h1>
             Five focused updates.
             <span>One smoother workflow.</span>
@@ -193,8 +193,8 @@ export default function Home() {
       </section>
 
       <section className="intro-band" aria-label="Update summary">
-        <p>Built from the feedback you&apos;ve shared during beta.</p>
-        <span>Real development previews · Features may evolve before release</span>
+        <p>Built from the feedback you&apos;ve shared.</p>
+        <span>Five product updates · Released August 04, 2026</span>
       </section>
 
       <div className="feature-list">
@@ -243,7 +243,7 @@ export default function Home() {
               aria-label={`Open a larger preview of ${feature.eyebrow}`}
             >
               <span className="frame-topline">
-                <span>Development preview</span>
+                <span>Product update</span>
                 <span>Click to expand</span>
               </span>
               <span className="image-stage">
@@ -257,11 +257,11 @@ export default function Home() {
       </div>
 
       <section className="closing" id="closing">
-        <p className="kicker">Beta is in full swing</p>
-        <h2>Keep sending your feedback.</h2>
+        <p className="kicker">Released August 04, 2026</p>
+        <h2>Five updates, ready for your workflow.</h2>
         <p>
-          We&apos;re finishing and validating these updates now. We&apos;ll share
-          release timing before they reach production.
+          These improvements are now available. Keep sending your feedback as
+          you put them to work—we&apos;ll keep making Talli better with every update.
         </p>
         <a className="primary-cta" href="#top">
           Back to the top <span aria-hidden="true">↑</span>
@@ -270,7 +270,7 @@ export default function Home() {
 
       <footer>
         <span>TALLI</span>
-        <span>Development preview · August 2026</span>
+        <span>Product update · August 04, 2026</span>
       </footer>
 
       {preview ? (
@@ -278,7 +278,7 @@ export default function Home() {
           className="lightbox"
           role="dialog"
           aria-modal="true"
-          aria-label={`${preview.eyebrow} development preview`}
+          aria-label={`${preview.eyebrow} product update`}
           onMouseDown={(event) => {
             if (event.currentTarget === event.target) setPreview(null);
           }}
