@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
   const title = "Five focused updates | Talli";
   const description =
-    "Explore five Talli product updates released August 04, 2026, covering payments, team access, estimates, item photos, and notifications.";
+    "Explore five Talli product updates arriving August 04, 2026, covering payments, team access, estimates, item photos, and notifications.";
 
   return {
     title,

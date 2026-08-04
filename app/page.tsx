@@ -140,7 +140,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Talli update home">
           TALLI
         </a>
-        <span className="header-label">Released August 04, 2026</span>
+        <span className="header-label">Launching August 04, 2026</span>
       </header>
 
       <nav className="progress-nav" aria-label="Feature navigation">
@@ -166,7 +166,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="kicker">Talli update · August 04, 2026</p>
+          <p className="kicker">Talli update · Arriving August 04, 2026</p>
           <h1>
             Five focused updates.
             <span>One smoother workflow.</span>
@@ -194,7 +194,7 @@ export default function Home() {
 
       <section className="intro-band" aria-label="Update summary">
         <p>Built from the feedback you&apos;ve shared.</p>
-        <span>Five product updates · Released August 04, 2026</span>
+        <span>Five product updates · Available August 04, 2026</span>
       </section>
 
       <div className="feature-list">
@@ -257,11 +257,11 @@ export default function Home() {
       </div>
 
       <section className="closing" id="closing">
-        <p className="kicker">Released August 04, 2026</p>
-        <h2>Five updates, ready for your workflow.</h2>
+        <p className="kicker">Available August 04, 2026</p>
+        <h2>Five updates, arriving tomorrow.</h2>
         <p>
-          These improvements are now available. Keep sending your feedback as
-          you put them to work—we&apos;ll keep making Talli better with every update.
+          These improvements arrive tomorrow. Keep sending your feedback as you
+          put them to work—we&apos;ll keep making Talli better with every update.
         </p>
         <a className="primary-cta" href="#top">
           Back to the top <span aria-hidden="true">↑</span>
@@ -270,7 +270,7 @@ export default function Home() {
 
       <footer>
         <span>TALLI</span>
-        <span>Product update · August 04, 2026</span>
+        <span>Product update · Available August 04, 2026</span>
       </footer>
 
       {preview ? (
