@@ -31,7 +31,7 @@ const features: Feature[] = [
     image: "/features/ach-payment.png",
     alt: "Customer-facing invoice payment page with card, bank account, and cash choices",
     side: "right",
-    note: "ACH availability requires account configuration and approval.",
+    note: "Contact Carreon Payments to have ACH enabled on your Talli account.",
   },
   {
     id: "logins",
