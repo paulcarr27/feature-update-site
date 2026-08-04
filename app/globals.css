@@ -187,44 +187,52 @@ a {
 .heading-visible .hero-copy > .kicker,
 .heading-visible .feature-copy > .kicker,
 .heading-visible.closing > .kicker {
-  animation: heading-kicker-in 2700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: heading-kicker-in 2200ms cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
 .heading-visible .feature-copy > h2,
 .heading-visible.closing > h2 {
-  animation: heading-title-in 3600ms 360ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: heading-title-in 2800ms 250ms cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
 .heading-visible .hero-title-line-one {
-  animation: heading-title-in 3600ms 360ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: heading-title-in 2800ms 250ms cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
 .heading-visible .hero-title-line-two {
-  animation: heading-title-in 3600ms 1250ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: heading-title-in 2800ms 900ms cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+.heading-visible .hero-copy > .kicker,
+.heading-visible .feature-copy > .kicker,
+.heading-visible.closing > .kicker,
+.heading-visible .hero-title-line,
+.heading-visible .feature-copy > h2,
+.heading-visible.closing > h2 {
+  backface-visibility: hidden;
+  will-change: transform, opacity;
 }
 
 @keyframes heading-kicker-in {
   from {
     opacity: 0;
-    transform: translateY(9px);
+    transform: translate3d(0, 9px, 0);
     letter-spacing: 0.19em;
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes heading-title-in {
   from {
     opacity: 0;
-    filter: blur(3px);
-    transform: translateY(22px);
+    transform: translate3d(0, 22px, 0);
   }
   to {
     opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
