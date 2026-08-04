@@ -503,6 +503,38 @@ a {
   line-height: 1.55;
 }
 
+.contact-links {
+  display: grid;
+  gap: 7px;
+  width: fit-content;
+  margin: 0 0 38px;
+  padding: 19px 22px;
+  border-left: 2px solid var(--blue);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.contact-links span {
+  margin-bottom: 3px;
+  color: var(--soft);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-links a {
+  width: fit-content;
+  color: #f3f5f8;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: color 180ms ease;
+}
+
+.contact-links a:hover {
+  color: var(--blue);
+}
+
 footer {
   display: flex;
   justify-content: space-between;

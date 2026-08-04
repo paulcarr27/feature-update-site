@@ -263,6 +263,13 @@ export default function Home() {
           These improvements arrive tomorrow. Keep sending your feedback as you
           put them to work—we&apos;ll keep making Talli better with every update.
         </p>
+        <div className="contact-links" aria-label="Contact information">
+          <span>Questions? We&apos;re here to help.</span>
+          <a href="mailto:Hello@carreonfinancial.com">
+            Hello@carreonfinancial.com
+          </a>
+          <a href="tel:+14803647638">(480) 364-7638</a>
+        </div>
         <a className="primary-cta" href="#top">
           Back to the top <span aria-hidden="true">↑</span>
         </a>
