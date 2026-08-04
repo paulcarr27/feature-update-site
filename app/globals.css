@@ -216,21 +216,24 @@ a {
 @keyframes heading-kicker-in {
   from {
     opacity: 0;
-    transform: translate3d(0, 9px, 0);
+    transform: translate3d(0, 6px, 0);
     letter-spacing: 0.19em;
   }
-  to {
+  68%,
+  100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+    letter-spacing: 0.12em;
   }
 }
 
 @keyframes heading-title-in {
   from {
     opacity: 0;
-    transform: translate3d(0, 22px, 0);
+    transform: translate3d(0, 12px, 0);
   }
-  to {
+  68%,
+  100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
