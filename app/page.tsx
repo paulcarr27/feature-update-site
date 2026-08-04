@@ -186,8 +186,12 @@ export default function Home() {
         <div className="hero-copy">
           <p className="kicker">Talli update · Arriving August 04, 2026</p>
           <h1>
-            Five focused updates.
-            <span>One smoother workflow.</span>
+            <span className="hero-title-line hero-title-line-one">
+              Five focused updates.
+            </span>
+            <span className="hero-title-line hero-title-line-two">
+              One smoother workflow.
+            </span>
           </h1>
           <p className="hero-summary">
             A clearer way to get paid, manage team access, build estimates, and
