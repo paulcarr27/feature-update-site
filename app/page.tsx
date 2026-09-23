@@ -27,8 +27,8 @@ const features: Feature[] = [
       "Attach a job link so the conversation stays connected to the work.",
       "Follow unread messages and return to your conversation drafts."
     ],
-    "image": "/features/september-overwatch.svg",
-    "alt": "Illustrative Overwatch chat with office and team conversations and a linked sample job",
+    "image": "/features/september-overwatch-app.jpg",
+    "alt": "Actual Overwatch chat screen with sample technician conversations and linked job",
     "side": "right",
     "note": "Enable Overwatch in Settings on the web. Mobile features require a compatible Talli Field app version."
   },
@@ -43,8 +43,8 @@ const features: Feature[] = [
       "Connect the payment to the right customer and job.",
       "Carry approved scope changes into the job’s updated total."
     ],
-    "image": "/features/september-quick-pay.svg",
-    "alt": "Illustrative Quick Pay summary linking a sample customer and job to a payment",
+    "image": "/features/september-quick-pay-app.jpg",
+    "alt": "Actual Talli Field Quick Pay screen with sample customer, job, items, and payment amount",
     "side": "left"
   },
   {
@@ -58,8 +58,8 @@ const features: Feature[] = [
       "Choose each customer’s first billing date when assigning a package.",
       "Review payment health and filter recurring transaction history."
     ],
-    "image": "/features/september-subscriptions.svg",
-    "alt": "Illustrative subscription package with included services and sample customer payment statuses",
+    "image": "/features/september-subscriptions-app.jpg",
+    "alt": "Actual Service Agreements screen showing subscription packages and sample payment-health statistics",
     "side": "right",
     "note": "Editing a package changes future assignments. Existing customers keep their agreed terms until you update their package."
   },
@@ -74,8 +74,8 @@ const features: Feature[] = [
       "Let customers choose whether to save their card.",
       "Follow email delivery, payment status, and outstanding balances."
     ],
-    "image": "/features/september-invoice.svg",
-    "alt": "Illustrative invoice and embedded card checkout, showing sample line items and optional save-card consent",
+    "image": "/features/september-invoice-app.jpg",
+    "alt": "Actual invoice checkout screen showing sample invoice details, embedded card fields, and payment journey",
     "side": "left",
     "note": "Available payment methods depend on your business’s payment setup. Bank payments can remain pending before settlement."
   },
@@ -90,8 +90,8 @@ const features: Feature[] = [
       "Add custom items alongside your catalog products.",
       "See custom-item sales reflected in daily reports."
     ],
-    "image": "/features/september-qsr.svg",
-    "alt": "Illustrative Quick Service catalog and sample order with a custom item",
+    "image": "/features/september-qsr-app.jpg",
+    "alt": "Actual Quick Service register with a sample order including a custom item",
     "side": "right"
   }
 ];
@@ -263,7 +263,7 @@ export default function Home() {
               aria-label={`Open a larger preview of ${feature.eyebrow}`}
             >
               <span className="frame-topline">
-                <span>Illustrative preview · Sample data</span>
+                <span>App screenshot · Sample data</span>
                 <span>Click to expand</span>
               </span>
               <span className="image-stage">
