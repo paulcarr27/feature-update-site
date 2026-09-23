@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
   const title = "September 2026 updates | Talli";
   const description =
-    "Explore Talli’s September 2026 updates: Overwatch team chat, field payments, subscription packages, embedded invoice checkout, and Quick Service improvements.";
+    "Explore Talli’s September 2026 updates: Overwatch team chat, field payments, subscription packages, embedded invoice checkout, and custom SMS notifications.";
 
   return {
     title,

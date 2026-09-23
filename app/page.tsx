@@ -27,8 +27,8 @@ const features: Feature[] = [
       "Attach a job link so the conversation stays connected to the work.",
       "Follow unread messages and return to your conversation drafts."
     ],
-    "image": "/features/september-overwatch-app.jpg",
-    "alt": "Actual Overwatch chat screen with sample technician conversations and linked job",
+    "image": "/features/september-overwatch-drawer-app.jpg",
+    "alt": "Actual full Overwatch workspace with technician timeline, roster, and an open chat drawer",
     "side": "right",
     "note": "Enable Overwatch in Settings on the web. Mobile features require a compatible Talli Field app version."
   },
@@ -58,7 +58,7 @@ const features: Feature[] = [
       "Choose each customer’s first billing date when assigning a package.",
       "Review payment health and filter recurring transaction history."
     ],
-    "image": "/features/september-subscriptions-app.jpg",
+    "image": "/features/september-subscriptions-photos-app.jpg",
     "alt": "Actual Service Agreements screen showing subscription packages and sample payment-health statistics",
     "side": "right",
     "note": "Editing a package changes future assignments. Existing customers keep their agreed terms until you update their package."
@@ -80,18 +80,18 @@ const features: Feature[] = [
     "note": "Available payment methods depend on your business’s payment setup. Bank payments can remain pending before settlement."
   },
   {
-    "id": "quick-service",
+    "id": "custom-sms",
     "number": "05",
-    "eyebrow": "Quick Service improvements",
-    "title": "A smoother flow on both sides of the counter.",
-    "summary": "Find products with category images, build orders with custom items, and move through an improved mobile counter experience.",
+    "eyebrow": "Custom SMS notifications",
+    "title": "Keep customers in the loop before you arrive.",
+    "summary": "Stay connected between booking and the visit with custom SMS for on-the-way updates and visit reminders.",
     "bullets": [
-      "Browse a visual category menu to find the right products.",
-      "Add custom items alongside your catalog products.",
-      "See custom-item sales reflected in daily reports."
+      "Send an on-the-way update from the job’s On my way action.",
+      "Help customers prepare with visit reminders.",
+      "Personalize customer communication with custom SMS messages."
     ],
-    "image": "/features/september-qsr-app.jpg",
-    "alt": "Actual Quick Service register with a sample order including a custom item",
+    "image": "/features/september-on-my-way-app.jpg",
+    "alt": "Actual Talli Field job screen with sample job details and the On my way button",
     "side": "right"
   }
 ];
@@ -192,7 +192,7 @@ export default function Home() {
           </h1>
           <p className="hero-summary">
             New ways to connect your team, collect payments, manage subscriptions,
-            and keep the counter moving.
+            and keep customers informed.
           </p>
           <a className="primary-cta" href="#overwatch">
             Explore what&apos;s new <span aria-hidden="true">↓</span>
@@ -207,7 +207,7 @@ export default function Home() {
           <span className="orbit-label label-two">Field payments</span>
           <span className="orbit-label label-three">Subscriptions</span>
           <span className="orbit-label label-four">Invoice checkout</span>
-          <span className="orbit-label label-five">Quick Service</span>
+          <span className="orbit-label label-five">Custom SMS</span>
         </div>
       </section>
 
@@ -281,7 +281,7 @@ export default function Home() {
         <h2>Five updates. More ways to keep moving.</h2>
         <p>
           Explore the September improvements across Field Service, Invoicing,
-          Subscriptions, and Quick Service. Keep sharing your feedback as you
+          Subscriptions, and customer communication. Keep sharing your feedback as you
           put Talli to work.
         </p>
         <p className="feature-note">
