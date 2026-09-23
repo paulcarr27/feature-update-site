@@ -96,3 +96,15 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+
+## Talli September 2026 edition
+
+This checkout publishes tallipos.com (Sites project in `.openai/hosting.json`). The separate `talli-website-motion` checkout is a companion concept, not this domain's source.
+
+The September 23 content update preserves the five-feature layout, orbit hero, original social image, progress navigation, heading animations, expandable previews, and contact links. Five chapters cover Overwatch chat, Quick Pay/change orders, subscription packages, embedded invoice checkout, and QSR improvements. QuickBooks Online is explicitly labeled a sandbox preview, not a live-business release. No native app version or new store release is claimed.
+
+Content sources in the parent product: `docs/overwatch-chat-v1.md`, `docs/subscription-packages.md`, `docs/billing-follow-through-2026-09-09.md`, `docs/quickbooks-integration-plan.md`, and September production invoice-checkout/Overwatch and QSR/Quick Pay commits. Merchant-specific accounting repairs are not advertised as general features.
+
+New preview assets are original SVG interface illustrations with sample data, labeled as illustrative on the page and in each asset. Regenerate with `python3 scripts/render-september-previews.py`. They are not screenshots of a live merchant account and never send messages or process payments. August screenshot assets remain available for older saved versions.
+
+Validation: production build; ESLint (no errors, two existing image-element warnings); responsive browser checks at 1440, 1024, and 390 pixels, including all five lightboxes and Escape dismissal. The repository's old `tests/rendered-html.test.mjs` still targets the discarded starter loading skeleton, not this site. Whole-project TypeScript checking has pre-existing missing Cloudflare worker type declarations in `db/index.ts` and `worker/index.ts`.

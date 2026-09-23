@@ -17,86 +17,83 @@ type Feature = {
 
 const features: Feature[] = [
   {
-    id: "ach",
-    number: "01",
-    eyebrow: "ACH payments",
-    title: "Customers can now pay invoices from a bank account.",
-    summary:
-      "Eligible businesses can offer ACH alongside card and cash on invoice links—giving customers more choice without adding another workflow.",
-    bullets: [
-      "Enable ACH after account verification.",
-      "Track pending, review, settled, and failed states.",
-      "See one payment status across invoices, jobs, transactions, and reports.",
+    "id": "overwatch",
+    "number": "01",
+    "eyebrow": "Overwatch team chat",
+    "title": "Keep the office and the field in the same conversation.",
+    "summary": "Bring technician conversations, team chat, and job context together in Overwatch—and keep the conversation going in Talli Field.",
+    "bullets": [
+      "Message a technician or the team from one workspace.",
+      "Attach a job link so the conversation stays connected to the work.",
+      "Follow unread messages and return to your conversation drafts."
     ],
-    image: "/features/ach-payment.png",
-    alt: "Customer-facing invoice payment page with card, bank account, and cash choices",
-    side: "right",
-    note: "Contact Carreon Payments to have ACH enabled on your Talli account.",
+    "image": "/features/september-overwatch.svg",
+    "alt": "Illustrative Overwatch chat with office and team conversations and a linked sample job",
+    "side": "right",
+    "note": "Enable Overwatch in Settings on the web. Mobile features require a compatible Talli Field app version."
   },
   {
-    id: "logins",
-    number: "02",
-    eyebrow: "Unique team logins",
-    title: "Give every team member a secure login.",
-    summary:
-      "Each employee gets personal access instead of relying on a shared owner account.",
-    bullets: [
-      "Invite employees to sign in with their own credentials.",
-      "Start with a role template, then adjust screens and actions.",
-      "Limit access to assigned records when needed.",
+    "id": "quick-pay",
+    "number": "02",
+    "eyebrow": "Quick Pay & change orders",
+    "title": "Keep field payments connected to the job.",
+    "summary": "Use Quick Pay in the field with customer and job assignment. When the work changes, revised estimates keep the scope, approval, and balance together.",
+    "bullets": [
+      "Build a Quick Pay payment with items or a custom amount.",
+      "Connect the payment to the right customer and job.",
+      "Carry approved scope changes into the job’s updated total."
     ],
-    image: "/features/team-access.png",
-    alt: "Edit Employee permissions with role templates, screen access, and action controls",
-    side: "left",
+    "image": "/features/september-quick-pay.svg",
+    "alt": "Illustrative Quick Pay summary linking a sample customer and job to a payment",
+    "side": "left"
   },
   {
-    id: "estimates",
-    number: "03",
-    eyebrow: "Updated estimate builder",
-    title: "Choose the estimate structure that fits your job.",
-    summary:
-      "Start with one complete scope, multiple customer options, or a room-by-room project.",
-    bullets: [
-      "Room by Room keeps work areas organized.",
-      "Every structure keeps pricing and totals in one workflow.",
-      "Change the structure as the project evolves.",
+    "id": "subscriptions",
+    "number": "03",
+    "eyebrow": "Subscription packages",
+    "title": "Give ongoing work a place of its own.",
+    "summary": "Organize recurring services into packages, then manage customer enrollment, payment setup, and recurring activity from one workspace.",
+    "bullets": [
+      "Create packages with pricing, included items, and a photo.",
+      "Choose each customer’s first billing date when assigning a package.",
+      "Review payment health and filter recurring transaction history."
     ],
-    image: "/features/estimate-builder.png",
-    alt: "Estimate Builder structure choices including Standard, Multiple Customer Options, and Room by Room",
-    side: "right",
+    "image": "/features/september-subscriptions.svg",
+    "alt": "Illustrative subscription package with included services and sample customer payment statuses",
+    "side": "right",
+    "note": "Editing a package changes future assignments. Existing customers keep their agreed terms until you update their package."
   },
   {
-    id: "groups",
-    number: "04",
-    eyebrow: "Item groups and photos",
-    title: "Group related work and add photos to each item.",
-    summary:
-      "Item groups organize the scope, while per-item photos make choices easier to understand.",
-    bullets: [
-      "Create groups for rooms, phases, or work types.",
-      "Move each line item into the right group.",
-      "Attach a photo from the line-item action menu.",
+    "id": "invoice-checkout",
+    "number": "04",
+    "eyebrow": "Invoice checkout",
+    "title": "A clearer path from the invoice to the payment.",
+    "summary": "A refreshed invoice email leads to card checkout right on the invoice page, with the details customers need before they pay.",
+    "bullets": [
+      "Review line items and totals alongside embedded card checkout.",
+      "Let customers choose whether to save their card.",
+      "Follow email delivery, payment status, and outstanding balances."
     ],
-    image: "/features/item-groups-photos.png",
-    alt: "Estimate Builder with grouped line items and an Add photo action",
-    side: "left",
+    "image": "/features/september-invoice.svg",
+    "alt": "Illustrative invoice and embedded card checkout, showing sample line items and optional save-card consent",
+    "side": "left",
+    "note": "Available payment methods depend on your business’s payment setup. Bank payments can remain pending before settlement."
   },
   {
-    id: "notifications",
-    number: "05",
-    eyebrow: "Notifications",
-    title: "Never miss a moment that matters to your business.",
-    summary:
-      "Configure in-app and email alerts around the events that matter most to your team.",
-    bullets: [
-      "Enable in-app alerts, email delivery, or both.",
-      "Follow approvals, change orders, payments, and completed jobs.",
-      "Open the related record directly from the notification.",
+    "id": "quick-service",
+    "number": "05",
+    "eyebrow": "Quick Service improvements",
+    "title": "A smoother flow on both sides of the counter.",
+    "summary": "Find products with category images, build orders with custom items, and move through an improved mobile counter experience.",
+    "bullets": [
+      "Browse a visual category menu to find the right products.",
+      "Add custom items alongside your catalog products.",
+      "See custom-item sales reflected in daily reports."
     ],
-    image: "/features/notifications.png",
-    alt: "Notification settings for in-app alerts, email delivery, and estimate approvals",
-    side: "right",
-  },
+    "image": "/features/september-qsr.svg",
+    "alt": "Illustrative Quick Service catalog and sample order with a custom item",
+    "side": "right"
+  }
 ];
 
 export default function Home() {
@@ -158,7 +155,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Talli update home">
           TALLI
         </a>
-        <span className="header-label">Launching August 04, 2026</span>
+        <span className="header-label">September 2026 update</span>
       </header>
 
       <nav className="progress-nav" aria-label="Feature navigation">
@@ -184,7 +181,7 @@ export default function Home() {
       <section className="hero" id="top" data-heading-reveal>
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="kicker">Talli update · Arriving August 04, 2026</p>
+          <p className="kicker">Talli update · September 23, 2026</p>
           <h1>
             <span className="hero-title-line hero-title-line-one">
               Five focused updates.
@@ -194,10 +191,10 @@ export default function Home() {
             </span>
           </h1>
           <p className="hero-summary">
-            A clearer way to get paid, manage team access, build estimates, and
-            stay informed.
+            New ways to connect your team, collect payments, manage subscriptions,
+            and keep the counter moving.
           </p>
-          <a className="primary-cta" href="#ach">
+          <a className="primary-cta" href="#overwatch">
             Explore what&apos;s new <span aria-hidden="true">↓</span>
           </a>
         </div>
@@ -206,17 +203,17 @@ export default function Home() {
           <span className="orbit orbit-one" />
           <span className="orbit orbit-two" />
           <span className="hero-five">5</span>
-          <span className="orbit-label label-one">Get paid</span>
-          <span className="orbit-label label-two">Team access</span>
-          <span className="orbit-label label-three">Build estimates</span>
-          <span className="orbit-label label-four">Add details</span>
-          <span className="orbit-label label-five">Stay informed</span>
+          <span className="orbit-label label-one">Team chat</span>
+          <span className="orbit-label label-two">Field payments</span>
+          <span className="orbit-label label-three">Subscriptions</span>
+          <span className="orbit-label label-four">Invoice checkout</span>
+          <span className="orbit-label label-five">Quick Service</span>
         </div>
       </section>
 
       <section className="intro-band" aria-label="Update summary">
         <p>Built from the feedback you&apos;ve shared.</p>
-        <span>Five product updates · Available August 04, 2026</span>
+        <span>Five product updates · September 2026</span>
       </section>
 
       <div className="feature-list">
@@ -266,7 +263,7 @@ export default function Home() {
               aria-label={`Open a larger preview of ${feature.eyebrow}`}
             >
               <span className="frame-topline">
-                <span>Product update</span>
+                <span>Illustrative preview · Sample data</span>
                 <span>Click to expand</span>
               </span>
               <span className="image-stage">
@@ -280,11 +277,17 @@ export default function Home() {
       </div>
 
       <section className="closing" id="closing" data-heading-reveal>
-        <p className="kicker">Available August 04, 2026</p>
-        <h2>Five updates, arriving tomorrow.</h2>
+        <p className="kicker">September 2026 update</p>
+        <h2>Five updates. More ways to keep moving.</h2>
         <p>
-          These improvements arrive tomorrow. Keep sending your feedback as you
-          put them to work—we&apos;ll keep making Talli better with every update.
+          Explore the September improvements across Field Service, Invoicing,
+          Subscriptions, and Quick Service. Keep sharing your feedback as you
+          put Talli to work.
+        </p>
+        <p className="feature-note">
+          <strong>Also in development: QuickBooks Online.</strong>{" "}
+          We’re testing invoice import and payment recording with a sandbox
+          connection. This preview is not yet available for live business accounts.
         </p>
         <div className="contact-links" aria-label="Contact information">
           <span>Questions? We&apos;re here to help.</span>
@@ -300,7 +303,7 @@ export default function Home() {
 
       <footer>
         <span>TALLI</span>
-        <span>Product update · Available August 04, 2026</span>
+        <span>Product update · September 2026</span>
       </footer>
 
       {preview ? (

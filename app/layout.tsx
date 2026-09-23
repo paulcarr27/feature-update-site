@@ -23,9 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
   const origin = `${protocol}://${host}`;
-  const title = "Five focused updates | Talli";
+  const title = "September 2026 updates | Talli";
   const description =
-    "Explore five Talli product updates arriving August 04, 2026, covering payments, team access, estimates, item photos, and notifications.";
+    "Explore Talli’s September 2026 updates: Overwatch team chat, field payments, subscription packages, embedded invoice checkout, and Quick Service improvements.";
 
   return {
     title,
