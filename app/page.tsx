@@ -58,7 +58,7 @@ const features: Feature[] = [
       "Choose each customer’s first billing date when assigning a package.",
       "Review payment health and filter recurring transaction history."
     ],
-    "image": "/features/september-subscriptions-photos-app.jpg",
+    "image": "/features/september-subscriptions-opus-app.jpg",
     "alt": "Actual Service Agreements screen showing subscription packages and sample payment-health statistics",
     "side": "right",
     "note": "Editing a package changes future assignments. Existing customers keep their agreed terms until you update their package."

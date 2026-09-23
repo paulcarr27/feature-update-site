@@ -109,4 +109,4 @@ The five feature images are actual browser screenshots captured September 23 fro
 
 Validation: production build; ESLint (no errors, two existing image-element warnings); responsive browser checks at 1440, 1024, and 390 pixels, including all five lightboxes and Escape dismissal. The repository's old `tests/rendered-html.test.mjs` still targets the discarded starter loading skeleton, not this site. Whole-project TypeScript checking has pre-existing missing Cloudflare worker type declarations in `db/index.ts` and `worker/index.ts`.
 
-Revision: subscription cards include the existing landscape package photo. Custom SMS copy reflects the product owner’s feature description; the supporting image shows the existing On my way job action, not a separate SMS settings screen.
+Revision: subscription cards include the three distinct Basic, Complete, and Premium landscape photos from Opus, provided by the product owner for website use. Custom SMS copy reflects the product owner’s feature description; the supporting image shows the existing On my way job action, not a separate SMS settings screen.
