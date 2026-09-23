@@ -147,7 +147,7 @@ a {
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
   align-items: center;
   min-height: 100svh;
-  padding: 130px max(8vw, 72px) 90px;
+  padding: 130px max(13vw, 220px) 90px max(8vw, 72px);
   overflow: hidden;
 }
 
@@ -670,11 +670,55 @@ footer {
   background: #15181d;
 }
 
+/* Keep the full labels for wide desktops; laptops use a narrow numbered rail. */
+@media (min-width: 1181px) and (max-width: 1600px) {
+  .progress-nav {
+    right: 16px;
+    width: 44px;
+    gap: 8px;
+  }
+
+  .progress-nav a {
+    justify-content: center;
+    min-height: 44px;
+  }
+
+  .progress-nav a:hover,
+  .progress-nav a.active {
+    transform: none;
+  }
+
+  .progress-nav strong {
+    display: none;
+  }
+
+  .progress-line {
+    left: 21px;
+    top: 22px;
+    bottom: 22px;
+  }
+
+  .hero {
+    padding-right: 120px;
+  }
+
+  .hero-orbit {
+    max-width: 100%;
+  }
+}
+
+.progress-nav a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
 @media (max-width: 1180px) {
   .progress-nav {
     display: none;
   }
 
+  .hero,
   .feature {
     padding-right: max(8vw, 72px);
   }

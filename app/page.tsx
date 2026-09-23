@@ -171,6 +171,7 @@ export default function Home() {
             href={`#${feature.id}`}
             className={active === feature.id ? "active" : ""}
             aria-label={`Go to ${feature.eyebrow}`}
+            title={feature.eyebrow}
           >
             <span>{feature.number}</span>
             <strong>{feature.eyebrow}</strong>
